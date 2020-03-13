@@ -1,0 +1,169 @@
+$colorBackground: #d1d8e2
+$colorCell: #6da5ff
+$colorMenu: #edf3fa
+$colorBorder: #0a0a0a
+
+
+*
+    margin: 0
+    padding: 0
+
+body
+    position: relative
+    background-color: $colorBackground
+
+
+
+.menu
+    position: fixed
+    left: calc( 50% - 250px )
+    top: 30px
+    border: 1px solid $colorBorder
+    border-radius: 15px
+    width: 500px
+    padding: 15px 0
+    text-align: center
+    font-size: 20px
+    background-color: $colorMenu
+
+
+    &__button
+        border: 1px solid $colorBorder
+        width: 200px
+        padding: 5px
+        border-radius: 10px
+        margin: 15px auto
+        background-color: white
+
+        &:hover
+            background-color: #3585db31
+
+
+.info
+    font-size: 25px
+    font-weight: 600
+    margin: 10px
+    color: #791919
+
+.level
+    display: flex
+    flex-direction: column
+
+    &__title
+        margin-bottom: 10px
+
+label
+    line-height: 30px
+    & input
+        margin-right: 5px
+
+
+table
+    margin: 30px auto
+    border-collapse: collapse
+
+
+td
+    min-width: 40px
+    height: 40px
+    border: 3px solid $colorBorder
+    background-color: white
+    & span
+        display: block
+        width: 100%
+        height: 100%
+
+.score
+    display: flex
+    justify-content: space-around
+    border: 3px solid $colorBorder
+    width: 400px
+    border-radius: 10px
+    padding: 20px 0
+    margin: 0 auto
+    background-color: $colorMenu
+
+.time
+    display: flex
+    &__img
+        width: 40px
+    &__value
+        line-height: 40px
+        font-size: 30px
+        margin-left: 10px
+
+.mines
+    display: flex
+    &__img
+        width: 40px
+    &__value
+        line-height: 40px
+        font-size: 30px
+        margin-left: 10px
+
+.flag
+    background-image: url(img/flag.png)
+    background-size: 60%
+    background-repeat: no-repeat
+    background-position: center 
+
+.explode
+    background-image: url(img/mine.png)
+    background-size: 60%
+    background-repeat: no-repeat
+    background-position: center
+
+.number
+    font-size: 30px
+    text-align: center
+    font-weight: 600
+
+.close
+    background-color: $colorCell
+    &:hover
+       background-color: #96b5e6
+
+.message
+    position: fixed
+    left: calc( 50% - 200px )
+    top: 30px
+    border: 1px solid $colorBorder
+    border-radius: 15px
+    width: 400px
+    height: 150px
+    padding: 15px
+    text-align: center
+    font-size: 20px
+    background-color: $colorMenu  
+    z-index: 2  
+
+    &__block
+        display: flex
+        margin-top: 15px
+
+
+    &__button
+        border: 1px solid $colorBorder
+        width: 100px
+        padding: 5px
+        border-radius: 10px
+        margin: 15px auto
+        background-color: white
+
+        &:hover
+            background-color: #3585db31
+
+
+.hidden
+    display: none
+
+@media (max-width: 520px)
+    .menu 
+        left: calc( 50% - 150px )
+        width: 300px
+
+    td
+        min-width: 25px
+        height: 25px
+
+
