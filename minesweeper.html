@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/board.js"></script>
+    <script defer src="js/flags.js"></script>
+    <script defer src="js/game.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/mines.js"></script>
+    <script defer src="js/score.js"></script>
+    <script defer src="js/settings.js"></script>
+    <script defer src="js/numbers.js"></script>
+    <script defer src="js/message.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="level">
+            <p class="level__title">Выберете уровень сложности: </p>
+            <label for="easy"><input class="radio" type="radio" name="level" id="easy" checked>Новичок</label>
+            <label for="middle"><input class="radio" type="radio" name="level" id="middle">Любитель</label>
+            <label for="hard"><input class="radio" type="radio" name="level" id="hard">Профессионал</label>
+        </div>
+        <div class="menu__button">Начать новую игру</div>
+    </div>
+    <div class="message hidden">
+        <p class="message__text info"></p>
+        <p class="message__text">Начать новую игру?</p>
+        <div class="message__block">
+            <div class="message__button ok">Да</div>
+            <div class="message__button no">Нет</div>
+        </div>    
+    </div>
+    <div class="game">
+        <table class="table"></table>
+        <div class="score hidden">
+            <div class="time">
+                <img class="time__img" src="img/clock.png">
+                <p class="time__value"></p>
+            </div>
+            <div class="mines">
+                <img class="mines__img" src="img/mine.png" alt="clock">
+                <p class="mines__value"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
